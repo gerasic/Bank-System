@@ -3,6 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SimpleATM.iml" filepath="$PROJECT_DIR$/.idea/SimpleATM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bank-service.iml" filepath="$PROJECT_DIR$/bank-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bank-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bank-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bank-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bank-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event-storage.iml" filepath="$PROJECT_DIR$/event-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/event-storage.main.iml" filepath="$PROJECT_DIR$/.idea/modules/event-storage.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/event-storage.test.iml" filepath="$PROJECT_DIR$/.idea/modules/event-storage.test.iml" />
     </modules>
   </component>
 </project>
