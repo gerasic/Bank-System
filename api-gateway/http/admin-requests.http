@@ -1,0 +1,40 @@
+### Создать пользователя
+POST http://localhost:9090/api/admin/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnZXJhc2ljIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImlhdCI6MTc0NzQzODczMSwiZXhwIjoxNzQ3NTI1MTMxfQ.ERrZgyt8l6qvP2l8QTVYzUi2b3ecmqPWIeLH0VwmAuY
+
+{
+  "login": "userAHAHA",
+  "password": "userAHAHA",
+  "name": "userAHAHA",
+  "age": 39,
+  "gender": "MALE",
+  "hairColor": "BROWN"
+}
+
+### Создать администратора
+POST http://localhost:9090/api/admin/admins
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnZXJhc2ljIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImlhdCI6MTc0NzQzODczMSwiZXhwIjoxNzQ3NTI1MTMxfQ.ERrZgyt8l6qvP2l8QTVYzUi2b3ecmqPWIeLH0VwmAuY
+
+{
+  "login": "adminuserAHAHA",
+  "password": "AdminPass456!",
+  "name": "Adminchik"
+}
+
+### Получить всех пользователей (с фильтрами)
+GET http://localhost:9090/api/admin/users?gender=MALE&hairColor=BROWN
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnZXJhc2ljIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImlhdCI6MTc0NzQzODczMSwiZXhwIjoxNzQ3NTI1MTMxfQ.ERrZgyt8l6qvP2l8QTVYzUi2b3ecmqPWIeLH0VwmAuY
+
+### Получить пользователя по логину
+GET http://localhost:9090/api/admin/users/userAHAHA
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnZXJhc2ljIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImlhdCI6MTc0NzQzODczMSwiZXhwIjoxNzQ3NTI1MTMxfQ.ERrZgyt8l6qvP2l8QTVYzUi2b3ecmqPWIeLH0VwmAuY
+
+### Получить все аккаунты
+GET http://localhost:9090/api/admin/accounts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnZXJhc2ljIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImlhdCI6MTc0NzQzODczMSwiZXhwIjoxNzQ3NTI1MTMxfQ.ERrZgyt8l6qvP2l8QTVYzUi2b3ecmqPWIeLH0VwmAuY
+
+### Получить аккаунты пользователя по логину
+GET http://localhost:9090/api/admin/accounts/user/gerasic1231
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnZXJhc2ljIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImlhdCI6MTc0NzQzODczMSwiZXhwIjoxNzQ3NTI1MTMxfQ.ERrZgyt8l6qvP2l8QTVYzUi2b3ecmqPWIeLH0VwmAuY

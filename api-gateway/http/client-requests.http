@@ -1,0 +1,47 @@
+### Get current user (me)
+GET http://localhost:9090/api/client/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzOTQxLCJleHAiOjE3NDc1MzAzNDF9.TKRDQYFMOCSUPvIZFANrEAKcdwj0GoYcgEDbrTG5l1o
+
+### Get all my accounts
+GET http://localhost:9090/api/client/accounts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzOTQxLCJleHAiOjE3NDc1MzAzNDF9.TKRDQYFMOCSUPvIZFANrEAKcdwj0GoYcgEDbrTG5l1o
+
+### Get my account by id
+GET http://localhost:9090/api/client/accounts/12
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzOTQxLCJleHAiOjE3NDc1MzAzNDF9.TKRDQYFMOCSUPvIZFANrEAKcdwj0GoYcgEDbrTG5l1o
+
+### Add a friend
+POST http://localhost:9090/api/client/friends/bbbbb
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzOTQxLCJleHAiOjE3NDc1MzAzNDF9.TKRDQYFMOCSUPvIZFANrEAKcdwj0GoYcgEDbrTG5l1o
+
+### Remove a friend
+DELETE http://localhost:9090/api/client/friends/bbbbb
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzMTc4LCJleHAiOjE3NDc1Mjk1Nzh9.yEG8bI0c5LCjZ1katp4ZiJKJDHoA3EVC10NA45G6zTw
+
+### Deposit to account
+POST http://localhost:9090/api/client/accounts/12/deposit
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzOTQxLCJleHAiOjE3NDc1MzAzNDF9.TKRDQYFMOCSUPvIZFANrEAKcdwj0GoYcgEDbrTG5l1o
+Content-Type: application/json
+
+{
+  "amount": 1000.00
+}
+
+### Withdraw from account
+POST http://localhost:9090/api/client/accounts/12/withdraw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzMTc4LCJleHAiOjE3NDc1Mjk1Nzh9.yEG8bI0c5LCjZ1katp4ZiJKJDHoA3EVC10NA45G6zTw
+Content-Type: application/json
+
+{
+  "amount": 100.00
+}
+
+### Transfer between accounts
+POST http://localhost:9090/api/client/accounts/12/transfer
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyWERYRFhEIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzQ3NDQzMTc4LCJleHAiOjE3NDc1Mjk1Nzh9.yEG8bI0c5LCjZ1katp4ZiJKJDHoA3EVC10NA45G6zTw
+Content-Type: application/json
+
+{
+  "toAccountId": 11,
+  "amount": 220.00
+}

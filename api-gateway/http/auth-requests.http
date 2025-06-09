@@ -1,0 +1,16 @@
+POST http://localhost:9090/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "gerasic",
+  "password": "Gerasic18.08"
+}
+
+### Login пользователя
+POST http://localhost:9090/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "userXDXDXD",
+  "password": "userXDXDXD"
+}

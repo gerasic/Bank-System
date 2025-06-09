@@ -1,0 +1,16 @@
+<configuration>
+    <!-- Отключаем Hibernate логи -->
+    <logger name="org.hibernate" level="OFF"/>
+
+    <!-- Пример конфигурации для вывода в консоль -->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Настроим корневой логгер, чтобы выводить логи только на консоль -->
+    <root level="INFO">
+        <appender-ref ref="Console"/>
+    </root>
+</configuration>

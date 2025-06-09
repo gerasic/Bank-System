@@ -1,0 +1,17 @@
+### GET запрос для получения всех аккаунтов по userId (login в моем случае)
+GET http://localhost:8080/api/admin/accounts?ownerLogin=gerasic1231
+Content-Type: application/json
+
+### GET запрос для получения друзей по userId (login в моем случае)
+GET http://localhost:8080/api/admin/users/gerasic1231/friends
+Content-Type: application/json
+
+### GET запрос для получения всех пользователей с фльтрацией по цвету волос и гендеру
+GET http://localhost:8080/api/admin/users?gender=MALE&hairColor=BROWN
+Content-Type: application/json
+
+### GET запрос для получения всех аккаунтов
+GET http://localhost:8080/api/admin/accounts
+
+### GET запрос для получения всех операций с фильтрацией по типу и accountId
+GET http://localhost:8080/api/admin/transactions?type=TRANSFER&accountId=10

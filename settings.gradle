@@ -1,0 +1,5 @@
+rootProject.name = 'gerasic'
+include 'presentation', 'application', 'infrastructure'
+include 'bankapp'
+include 'tests'
+include 'model'

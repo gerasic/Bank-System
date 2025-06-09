@@ -1,0 +1,26 @@
+  server:
+    port: 9090
+
+  spring:
+    datasource:
+      url: jdbc:postgresql://localhost:5433/apigateway
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
+      hikari:
+        minimum-idle: 5
+        maximum-pool-size: 20
+        idle-timeout: 300000
+        max-lifetime: 600000
+
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+
+    logging:
+      level:
+        org.springframework.security: DEBUG

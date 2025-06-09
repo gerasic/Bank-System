@@ -1,0 +1,16 @@
+dependencies {
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    // ORM
+    implementation 'org.hibernate:hibernate-core:6.4.0.Final'
+    implementation 'org.postgresql:postgresql:42.7.2'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+
+    // Recommended connection pool
+    implementation 'com.zaxxer:HikariCP:5.0.0'
+    implementation 'org.hibernate:hibernate-hikaricp:6.4.0.Final'
+
+    // Logback for logging
+    implementation 'org.slf4j:slf4j-api:2.0.0-alpha1'
+    implementation 'ch.qos.logback:logback-classic:1.5.13'
+}
